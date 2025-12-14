@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}About · Jesse Mendoza{% endblock %}
+
+{% block content %}
+<h1>About Me</h1>
+
+<p>
+  Hello, my name is Jesse Mendoza. I am a senior Software Engineering Student at San Jose State University.
+  I am passionate about learning new concepts and applying them to real world scenarios. 
+  I have a strong interest in automation with python and bash and enjoy problem solving through programming.
+</p>
+
+<section class="section">
+  <h2>Education</h2>
+
+  <img
+    src="{{ url_for('static', filename='images/SJSULogo.svg') }}"
+    alt="San José State University Logo"
+    class="about-img"
+  >
+
+  <p>
+    I am currently completing my Software Engineering degree at San José State University,
+    where I have gained hands-on experience with software design, development, and testing.
+  </p>
+</section>
+
+<section class="section">
+  <h2>What I’m working on</h2>
+  <ul class="list">
+    <li>Software Engineering senior project</li>
+    <li>Increasing automation at work using test scripts</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>My Faith</h2>
+
+  <img
+    src="{{ url_for('static', filename='images/Jesus.jpeg') }}"
+    alt="Jesus Christ"
+    class="about-img faith-img"
+  >
+
+  <p>
+    I am a Christian, follower of Jesus Christ. He is my lord and savior and plays a very important role in my life. 
+    It shapes my values, work ethic, and the way I approach challenges and relationships.
+    I strive to act with integrity, humility, and respect in both my personal life
+    and professional work.
+  </p>
+</section>
+{% endblock %}

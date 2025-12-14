@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Home · Jesse Mendoza{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <img
+    src = "{{ url_for('static', filename='images/MyPicture.jpeg') }}"
+    alt="Jesse Mendoza"
+    class="profile-pic"
+    >
+  <h1>Jesse Mendoza</h1>
+  <p class="subtitle">
+    Senior Software Engineering Student @ SJSU · Test Engineer @ Quanta Manufacturing Fremont
+  </p>
+
+  <div class="cta-row">
+    <a class="btn" href="{{ url_for('resume') }}">View Resume</a>
+    <a class="btn btn-secondary" href="{{ url_for('projects') }}">Projects</a>
+  </div>
+</section>
+
+<section class="card-grid">
+  <a class="card" href="{{ url_for('about') }}">
+    <h2>About Me</h2>
+    <p>Click here to read about me</p>
+  </a>
+
+  <a class="card" href="{{ url_for('heritage') }}">
+    <h2>Heritage</h2>
+    <p>Click here to read about my background, family roots, etc</p>
+  </a>
+
+  <a class="card" href="{{ url_for('resume') }}">
+    <h2>Resume</h2>
+    <p>Click here to view my resume.</p>
+  </a>
+</section>
+{% endblock %}
